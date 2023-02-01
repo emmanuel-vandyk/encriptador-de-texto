@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <main>
+        <section class="form box">
+            <form id="formulario">
+                <label for="input-texto">Solo letras minusculas sin acentos</label>
+                <textarea class="text-area" name="input-texto" name="input-texto" id="input-texto"  placeholder="Ingrese el texto aqui" cols="5" rows="50"></textarea>
+                <div class="btn-container">
+                    <input class="btn" type="submit" value="Encriptar" id="btn-encriptar">
+                    <input class="btn" type="submit" value="Desencriptar" id="btn-desencriptar">
+                </div>
+            </form>
+        </section>
+        <aside class="aside box">
+            <label for="mensaje-texto">Mensaje encriptado</label>
+            <textarea class="text-area" name="mensaje-texto" id="mensaje-texto" cols="5" rows="50"></textarea>
+            <input class="btn" type="submit" value="Copiar" id="btn-copy">
+        </aside>
+    </main>
+    <footer class="footer">
+        <p>Proyecto creado por<span>Emmanuel van Dyk &copy; 2023</span></p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
