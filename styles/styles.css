@@ -17,4 +17,30 @@ body {
 /* Imagenes */
 
 /* Vector */
+.logo-alura {
+    position: absolute;
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
+}
 
+/* Vector Logo Info */
+
+.logo-info {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+/* Vector Muñeco */
+
+.vector-muñeco {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
