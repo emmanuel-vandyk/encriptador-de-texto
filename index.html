@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de texto</title>
+    <title>Alura Challenge One: Encriptador de texto</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <main>
-        <section class="form box">
-            <img class="logo-alura" src="./assets/vector.svg" alt="Logo de Alura">
-            <form id="formulario">
-                <img class="logo-info" src="./assets/info-logo.svg" alt="Acceder a mas información">
-                <textarea class="text-area-1" name="input-texto" name="input-texto" id="input-texto"  placeholder="Ingrese el texto aqui" cols="5" rows="50"></textarea>
-                <label class="input-texto" for="input-texto">Solo letras minúsculas sin acentos</label>
-                <div class="btn-container">
-                    <input class="btn-blue" type="submit" value="Encriptar" id="btn-encriptar">
-                    <input class="btn-lightgray" type="submit" value="Desencriptar" id="btn-desencriptar">
+        <div class="flex-image">
+            <img class="logo-alura" src="./assets/Vector.svg" alt="Logo de Alura">
+        </div>
+        <textarea placeholder="Ingrese el texto aqui"></textarea>
+        <article class="article-info">
+            <div class="info-texto">
+                <p class="parrafo-info"><img class="logo-info" src="./assets/info-logo.svg" alt="Logo informativo">Solo letras minúsculas y sin acentos</p>
+                <div class="flex-btns">
+                    <button class="btn-blue"><p>Encriptar</p></button>
+                    <button class="btn-lightgray"><p>Desencriptar</p></button>
                 </div>
-            </form>
+            </div>
+        </article>
+        <section class="aside-primario">
+            <article class="article-respuesta">
+                <img class="img-muñeco" src="./assets/Muñeco.svg" alt="Imagen de persona mirando por lupa">
+                <p class="texto parrafo-superior">Ningún mensaje fue encontrado</p>
+                <p class="texto parrafo-inferior">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </article>
         </section>
-        <aside class="aside box">
-            <img class="vector-muñeco" src="./assets/muñeco.svg" alt="Mujer usando una lupa">
-            <label class="mensaje-texto" for="mensaje-texto">Ningun mensaje fue encontrado</label>
-            <textarea class="text-area-2" name="mensaje-texto" id="mensaje-texto" cols="5" rows="50">Ingresa el texto que deseas encriptar</textarea>
-            <input class="btn-white" type="submit" value="Copiar" id="btn-copy">
-        </aside>
     </main>
-    <footer class="footer">
-        <p>Proyecto creado por<span>Emmanuel van Dyk &copy; 2023</span></p>
-    </footer>
-    <script src="./js/main.js"></script>
+<!--         <aside class="aside-secundario">
+            <textarea cols="30" rows="10"></textarea>
+            <button class="btn-white"><p>Copiar</p></button>
+        </aside> -->
+
 </body>
 </html>
