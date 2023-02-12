@@ -2,190 +2,314 @@
 
 /* ESTILOS GENERALES */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Inter';
     font-style: normal;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: center;
+    font-size: 32px;
+    overflow: hidden;
+    line-height: 150%;
     background: #F3F5FC;
 }
 
 /* Encriptador - 1 Desktop */
 
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 /* Vector */
 
+header {
+    display: flex;
+    width: 100%;
+}
+
 .logo-alura {
-    position: absolute;
-    top: 3%;
-    bottom: 0%;
+    padding-top: 1em;
+    margin: 0 0 0 5.1em;
+
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
 }
 
 /* Ingrese el texto aqui */
 
-main > textarea {
-    position: absolute;
-    width: 680px;
-    height: 40%;
-    left: 242px;
-    top: 168px;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 90%;
+.text-area {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 5vw;
+    height: 10vh;
+    border: none;
     color: #0A3871;
-    border: 0;
-    outline: 0;
-    background-color: #F3F5FC;
-    flex-grow: 1;
+    padding: 2px;
+    text-transform: lowercase;
     resize: none;
-    scroll-behavior: smooth;
 }
 
-textarea::placeholder {
-    color: #0A3871;
-}
+::placeholder { color: #0A3871; }
+    .text-area:focus {
+        outline: none;
+    }
 
-/* Solo letras minúsculas y sin acentos */
-.article-info {
-    width: 45%;
-    height: 95vh;
+/* Resultado del texto encriptado */
+
+.mensaje {
     display: flex;
-    align-items: flex-end;
-    color: #495057;
-    font-size: 12px;
+    flex-direction: column;
+    background: #FFFFFF;
+    background-image: url("/assets/muñeco.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: black;
+    padding: 1em 0 0 1em;
+    resize: none;
+    height: 55%;
 }
 
-.article-info > p {
-    width: 250px;
-    height: 18px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    color: #495057;
-    opacity: 0.8;
-    order: 1;
-    flex-grow: 0;
-
+.mensaje:focus {
+    outline: none;
 }
 
-.logo-info  {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 1em;
-}
-
-.parrafo-info {
-    display: flex;
-    justify-content: flex-start;
-    gap: 1em;
-}
-
-/* Buttons */
+/* Botones */
 
 .flex-btns {
     display: flex;
-    gap: 1.5rem;
+    align-items: flex-end;
 }
 
-button {
-    padding: 24px;
-    border-radius: 24px;
-    flex: none;
-    flex-grow: 0;
-}
-
-button > p {
-    width: 280px;
-    height: 19px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-}
-
-/* Button Blue */
-
-.btn-blue {
-    background: #0A3871;
-    border-radius: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    color: #FFFFFF;
-    border-color: transparent;
-}
-
-/* Button Light gray */
-.btn-lightgray {
-    background: #D8DFE8;
+.btn {
     border: 1px solid #0A3871;
-    order: 1;
-    color: #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-size: 16px;
 }
 
-/* Aside */
+.btn-desencriptar {
+    background: #D8DFE8;
+    color: #0A3871;
+    margin-left: 30px;
+}
 
-.article-respuesta {
+.btn-encriptar {
+    background-color: #0A3871;
+    color: white;
+}
+
+.btn-blanco {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    margin-top: 37%;
+    right: 10%;
+    background-color: #FFFFFF;
+
+}
+
+.btn-copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    width: 336px;
+    font-size: 16px;
+}
+
+/* Solo letras minúsculas y sin acentos */
+.info-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-    margin: 2rem 0;
-    gap: 1.5rem;
+    height: 120vh;
+    width: 100%;
+    margin: 0 0 0 5vw;
+    gap: .5em;
 }
 
-/* Ningún mensaje fue encontrado */
-.texto {
-    font-family: 'Inter';
-    font-style: normal;
-    text-align: center;
+.info {
+    background-image: url("/assets/info-logo.svg");
+    background-repeat: no-repeat;
+    background-position-y: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informacion {
     color: #495057;
-    flex: none;
-    align-self: stretch;
-    flex-grow: 0;
-    width: 336px;
+    font-size: 18px;
+    margin: 0 0 0 1.5em;
 }
 
-.parrafo-superior {
-    height: 58px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    color: #343A40;
-    flex: none;
-    order: 0;
+
+/* DISEÑO RESPONSIVO */
+
+/* QUERIES DESKTOP */
+@media screen and (max-width: 1440px) and (max-height: 1024px) {
+    
+    main {
+        margin-left: 1em;
+        padding: 0 1em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .logo-alura {
+        padding: 0;
+        margin: 1em 0 0 2em;
+        width: 1em;
+    }
+
+    .mensaje {
+        height: 62%;
+    }
 }
 
-/* Ingresa el texto que desees encriptar o desencriptar. */
+/* QUERIES TABLET (1430-480) */
+@media screen and (max-width: 768px) {
+    
+    header {
+        display: flex;
+        align-items: flex-start;
+    }
 
-.parrafo-inferior {
-    height: 48px;
-    font-weight: 400;
-    font-size: 16px;
-    order: 1;
+    .logo-alura {
+        margin-top: 1em;
+        margin-left: 1.3em;
+        width: 4%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1em;
+    }
+
+    .text-area {
+        margin-left: .2em;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 45vh;
+    }
+    
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 45vh;
+        margin: 0;
+    }
+    
+    .info {
+        display: flex;
+        align-self: flex-start;
+    }
+    
+    .flex-btns {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .botones {
+        width: 440px;
+        height: 67px;
+    }
+    
+    .mensaje {
+        background-image: url("/assets/mensaje-no-encontrado.svg");
+        height: 25vh;
+        width: 100%;
+        margin: 0;
+        padding-top: 1rem;
+        font-size: 24px;
+        text-align: center;
+        color: black;
+    }
+
+    .btn-blanco {
+       
+        margin-bottom: 2.5rem;
+        width: 80vw;
+    }
+
+    .btn-copiar {
+        padding: 1.5em;
+        width: 80vw;
+    }
+
+}
+
+/* QUERIES MOBILE */
+@media screen and (max-width: 480px) {
+    header {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo-alura {
+        margin: .5em 0 0 .3em;
+        padding: 0;
+        width: 10%;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-area {
+        width: 100%;
+        height: 10vh;
+        font-size: 32px;
+    }
+
+    .flex-btns {
+        flex-direction: column;
+        justify-content: center;
+        gap: .7em;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    section {
+        height: 55vh;
+        align-items: center;
+    }
+
+    .mensaje {
+        background-image: url("/assets/mensaje-no-encontrado.svg");        
+        width: 90%;
+        height: 15vh;
+        margin-bottom: 50%;
+    }
 }
