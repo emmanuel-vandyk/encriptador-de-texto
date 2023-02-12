@@ -4,36 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alura Challenge One: Encriptador de texto</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Alura Challenge One: Encriptador de texto</title>
 </head>
 <body>
+    <header>
+        <img class="logo-alura" src="./assets/Vector.svg" alt="Logo de Alura">
+    </header>
     <main>
-        <div class="flex-image">
-            <img class="logo-alura" src="./assets/Vector.svg" alt="Logo de Alura">
-        </div>
-        <textarea placeholder="Ingrese el texto aqui"></textarea>
-        <article class="article-info">
-            <div class="info-texto">
-                <p class="parrafo-info"><img class="logo-info" src="./assets/info-logo.svg" alt="Logo informativo">Solo letras minúsculas y sin acentos</p>
+        <section class="main-section">
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="info-container">
+                <div class="info">
+                    <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                </div>
                 <div class="flex-btns">
-                    <button class="btn-blue"><p>Encriptar</p></button>
-                    <button class="btn-lightgray"><p>Desencriptar</p></button>
+                    <button class="btn-encriptar btn" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar btn" onclick="btnDesencriptar()">Desencriptar</button>
                 </div>
             </div>
-        </article>
-        <section class="aside-primario">
-            <article class="article-respuesta">
-                <img class="img-muñeco" src="./assets/Muñeco.svg" alt="Imagen de persona mirando por lupa">
-                <p class="texto parrafo-superior">Ningún mensaje fue encontrado</p>
-                <p class="texto parrafo-inferior">Ingresa el texto que desees encriptar o desencriptar.</p>
-            </article>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <div class="btn-blanco">
+                <button class="btn-copiar" onclick="copiar()">Copiar</button>
+            </div>
         </section>
     </main>
-<!--         <aside class="aside-secundario">
-            <textarea cols="30" rows="10"></textarea>
-            <button class="btn-white"><p>Copiar</p></button>
-        </aside> -->
-
+<script src="./js/main.js"></script>
 </body>
 </html>
