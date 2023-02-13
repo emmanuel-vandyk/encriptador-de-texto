@@ -62,7 +62,7 @@ main {
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
-    background-image: url("/assets/muñeco.svg");
+    background-image: url("/assets/munieco.svg");
     background-repeat: no-repeat;
     background-position: center;
     border: none;
