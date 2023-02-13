@@ -1,6 +1,6 @@
 # Desafio Encriptador de Texto - ALURA LATAM - ORACLE ONE EDUCATION
 
-## Tecnologías utilizadas*** => HTML, CSS y Javascript
+## Tecnologías utilizadas => HTML, CSS y Javascript
 
 ### El diseño fue desarrollado por Alura Latam en el programa Figma.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -22,7 +22,7 @@ Por ejemplo: "gato" => "gaitober" gaitober" => "gato"!
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Caracteristicas:**
 
-Diseño Responsivo - Mobile UI - Desktop UI
+Diseño Responsivo - Mobile UI - Desktop UI - Tablet UI
 
 ![desktop-1](https://user-images.githubusercontent.com/93367648/218357934-e85292ce-a724-4013-a520-38a3d2b845e3.png)
 ![desktop-2](https://user-images.githubusercontent.com/93367648/218357987-70ac1c41-3ab6-4a74-b8c5-873a15b924b5.png)
