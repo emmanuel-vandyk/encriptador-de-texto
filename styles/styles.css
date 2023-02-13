@@ -68,9 +68,10 @@ main {
     border: none;
     border-radius: 24px;
     color: black;
-    padding: 1em 0 0 1em;
+    padding: 1em 1em 0 1em;
     resize: none;
-    height: 55%;
+    height: 70vh;
+    text-align: center;
 }
 
 .mensaje:focus {
@@ -109,11 +110,7 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    position: fixed;
-    margin-top: 37%;
-    right: 10%;
     background-color: #FFFFFF;
-
 }
 
 .btn-copiar {
@@ -122,8 +119,11 @@ main {
     color: #0A3871;
     background-color: #FFFFFF;
     cursor: pointer;
-    width: 336px;
+    width: 23vw;
     font-size: 16px;
+    position: absolute;
+    margin-bottom: 2em;
+    padding: 1.2em;
 }
 
 /* Solo letras minúsculas y sin acentos */
@@ -156,7 +156,7 @@ main {
 /* DISEÑO RESPONSIVO */
 
 /* QUERIES DESKTOP */
-@media screen and (max-width: 1440px) and (max-height: 1024px) {
+@media screen and (max-width: 1440px) {
     
     main {
         margin-left: 1em;
@@ -190,7 +190,6 @@ main {
 
     .logo-alura {
         margin-top: 1em;
-        margin-left: 1.3em;
         width: 4%;
     }
 
@@ -198,6 +197,7 @@ main {
         display: flex;
         flex-direction: column;
         padding: 0 1em;
+        margin-top: 1em;
     }
 
     .text-area {
@@ -243,24 +243,25 @@ main {
     
     .mensaje {
         background-image: url("/assets/mensaje-no-encontrado.svg");
-        height: 25vh;
+        height: 20vh;
         width: 100%;
-        margin: 0;
-        padding-top: 1rem;
+        margin-top: 1em;
+        padding: 0;
+        padding-bottom: 3em;
+        padding-top: 1em;
         font-size: 24px;
         text-align: center;
         color: black;
     }
 
     .btn-blanco {
-       
-        margin-bottom: 2.5rem;
-        width: 80vw;
+        width: 85vw;
+        margin-bottom: .5em;
     }
 
     .btn-copiar {
         padding: 1.5em;
-        width: 80vw;
+        width: 75vw;
     }
 
 }
@@ -281,14 +282,19 @@ main {
     main {
         flex-direction: column;
         justify-content: flex-start;
-        margin: 0;
+        margin: .5em;
         padding: 0;
+        height: 95vh;
     }
 
     .text-area {
         width: 100%;
         height: 10vh;
         font-size: 32px;
+    }
+
+    .informacion {
+        font-size: 12px;
     }
 
     .flex-btns {
@@ -302,14 +308,22 @@ main {
     }
 
     section {
-        height: 55vh;
         align-items: center;
+        margin: 1em 0;
     }
 
     .mensaje {
+        text-align: center;
         background-image: url("/assets/mensaje-no-encontrado.svg");        
-        width: 90%;
-        height: 15vh;
-        margin-bottom: 50%;
+        height: 100%;
+        border-radius: .5em;
+        padding-left: 0;
+        padding-bottom: 40vh;
+    }
+
+    .btn-blanco {
+        width: 100%;
+        height: 100vh;
+        background: white;
     }
 }
